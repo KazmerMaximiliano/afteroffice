@@ -1,0 +1,9 @@
+[program:websockets]
+directory=/var/www/smartzone
+command=php artisan websockets:serve
+numprocs=1
+;user=laravel-echo
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/websockets.err.log
+stdout_logfile=/var/log/websockets.out.log
